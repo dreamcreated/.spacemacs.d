@@ -36,7 +36,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     helm
+     ;;helm
      auto-completion
      semantic
      better-defaults
@@ -328,7 +328,8 @@ you should place your code here."
           ("gnu-cn"   . "http://elpa.zilongshanren.com/gnu/")))
   (global-set-key (kbd "C-x m") 'eshell)
   (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-  (global-set-key (kbd "C-x j") 'avy-goto-char)
+  (global-set-key (kbd "C-c j") 'avy-goto-char)
+  (global-set-key (kbd "C-c h i") 'helm-imenu-in-all-buffers)
   (setq-default ispell-program-name "aspell")  
   (ispell-change-dictionary "american" t)  
   (setq ispell-extra-args '("--lang=en_US"))
